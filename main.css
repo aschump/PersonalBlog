@@ -1,0 +1,17 @@
+header{
+    border: 2px solid green;
+    margin:5px;
+}
+.sidebar{
+    border: 2px solid green;
+    margin:5px;
+}
+.content{
+    border: 2px solid green;
+    margin:5px;
+}
+footer{
+    border: 2px solid green;
+    margin:5px;
+
+}
