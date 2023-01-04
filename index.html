@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="main.css">
-     <title>Personal Blog</title>
-        <meta name="description" content="Blog"/>
-    </head>
-    <body>
-        <header>
-            <h1>Blog Name</h1>
-        </header>
-        <div class="sidebar">
-            <div class="bio">
-                <h2>Meet Me</h2>
-                <p>Write Bio here</p>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css">
+
+    <title>Abstract Utopia</title>
+    <meta name="description" content="Blog" />
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>Abstract Utopia</h1>
+            <img class="banner" src="img/banner.png" alt="potted plants">
+            <div class="nav"><a href=index.html> Home </a> |
+                <a href=blog_post.html>Latest Post</a>
             </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="photo">
+                <img id="avatar" src="img/avatar.jpg" alt="avatar">
+            </div>
+            <h2>Ember</h2>
+            <p>I like plants, books, and caffeine.</p>
+            <br>
+            <h3>Want to see more of us? Check out our socials!</h3>
+            <div class="socials">
+                <a href="http://facebook.com/"><img class="icons" src="img/fb.png" alt="Facebook"></a>
+                <a href="http://youtube.com/"><img class="icons" src="img/youtube.png" alt="Youtube"></a>
+                <a href="http://instagram.com/"><img class="icons" src="img/insta.png" alt="Instagram"></a>
+            </div>
+            <br>
             <div class="emailList">
-                <h3>Email Sign Up List</h3>
-                Name:<br>
-                Email:
+                <h3>Want Emails From Us?</h3>
+                Name:<input type:"text"><br>
+                Email:<input type:"text"><br>
+                <button type="submit">Submit</button>
+
             </div>
         </div>
         <div class="content">
             <div class="post">
-            <h2>First blog post</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante in nibh mauris cursus mattis molestie a iaculis at. Egestas purus viverra accumsan in nisl nisi scelerisque eu. Fringilla urna porttitor rhoncus dolor. Consectetur lorem donec massa sapien. Urna neque viverra justo nec ultrices dui sapien eget. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Nunc aliquet bibendum enim facilisis gravida neque convallis. Viverra suspendisse potenti nullam ac tortor vitae purus.</p>
+                <h5>Published on 12/21/2022</h5>
+                <div class="mobile">
+                    <hr>
+                </div>
+                <p>
+                <h2>Starting Your Summer Garden</h2>
+                <img class="preview" src="img/garden.jpg" alt="garden">
+                <h4>Design For YOUR Space</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ante in nibh mauris cursus mattis molestie a iaculis at. Egestas
+                purus viverra accumsan in nisl nisi scelerisque eu. Fringilla urna porttitor rhoncus dolor.
+                Consectetur lorem donec massa sapien... <a href=blog_post.html>Read More...</a></p>
+                <br>
+            </div>
+            <br>
+            <div class="post">
+                <h5>Published on 11/20/2022</h5>
+                <div class="mobile">
+                    <hr>
+                </div>
+                <h2>Companion Plants 101</h2>
+                <img class="preview" src="img/garden2.jpeg" alt="flowers">
+                <p>
+                <h4>What are companion plants?</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna ... <a href=blog_post.html>Read More...</a>
+                </p>
             </div>
         </div>
-    </body>
-    <footer> Footer
-    </footer>
+    </div>
+</body>
+<hr>
+<footer> Website by Ember Schumpert
+</footer>
+
 </html>

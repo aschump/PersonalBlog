@@ -1,36 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="blog_post.css">
-        <title>Blog Post</title>
-        <meta name="description" content="Post" />
-    </head>
-    <body>
-        <header>
-            <h1>Blog Name</h1>
-        </header>
-        <div class="sidebar">
-            <div class="bio">
-                <h2>Meet Me</h2>
-                <p>Write Bio here</p>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="poststyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Post</title>
+    <meta name="description" content="Post" />
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>Abstract Utopia</h1>
+            <img class="banner" src="img/banner.png" alt="potted plants">
+            <div class="nav"><a href=index.html> Home </a> |
+                <a href=blog_post.html>Latest Post</a>
             </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <div class="photo">
+                <img id="avatar" src="img/avatar.jpg" alt="avatar">
+            </div>
+            <h2>Ember</h2>
+            <p>I like plants, books, and caffeine.</p>
+            <br>
+            <h3>Want to see more of us? Check out our socials!</h3>
+            <div class="socials">
+                <a href="http://facebook.com/"><img class="icons" src="img/fb.png" alt="Facebook"></a>
+                <a href="http://youtube.com/"><img class="icons" src="img/youtube.png" alt="Youtube"></a>
+                <a href="http://instagram.com/"><img class="icons" src="img/insta.png" alt="Instagram"></a>
+            </div>
+            <br>
             <div class="emailList">
-                <h3>Email Sign Up List</h3>
-                Name:<br>
-                Email:
+                <h3>Want Emails From Us?</h3>
+                Name:<input type:"text"><br>
+                Email:<input type:"text"><br>
+                <button type="submit">Submit</button>
             </div>
         </div>
         <div class="content">
-            <article class="feature">
-                <h2>Post Title</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare massa eget egestas purus. Proin fermentum leo vel orci porta. Magnis dis parturient montes nascetur ridiculus mus. Magna etiam tempor orci eu lobortis. Interdum consectetur libero id faucibus nisl. Nulla malesuada pellentesque elit eget. Varius quam quisque id diam vel quam. Tristique magna sit amet purus gravida quis. Tincidunt ornare massa eget egestas purus viverra accumsan in.
-
-                        Ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. Hendrerit gravida rutrum quisque non. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Risus at ultrices mi tempus imperdiet nulla malesuada. Gravida quis blandit turpis cursus in. Orci sagittis eu volutpat odio. Nibh mauris cursus mattis molestie a. Enim lobortis scelerisque fermentum dui faucibus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Magna fringilla urna porttitor rhoncus.
+            <div class="post">
+                <div class="top">
+                    <h5>Published on 12/21/2022</h5>
+                    <div class="mobile">
+                        <hr>
+                    </div>
+                    <h2>Starting Your Summer Garden</h2>
+                    <img id="preview" src="img/garden.jpg" alt="garden">
+                </div>
+                <br>
+                <div class="text1">
+                    <p>
+                    <h4>Design For YOUR Space</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ante in nibh mauris cursus mattis molestie a iaculis at. Egestas
+                    purus viverra accumsan in nisl nisi scelerisque eu. Viverra suspendisse potenti nullam ac tortor
+                    vitae purus.
+                    <br>
+                    <h4>Plant Selection</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ante in nibh mauris cursus mattis molestie a iaculis at. Egestas
+                    purus viverra accumsan in nisl nisi scelerisque eu. Fringilla urna porttitor rhoncus dolor.
+                    Consectetur lorem donec massa sapien.
                     </p>
-            </article>
+                </div>
+                <figure class="plant1">
+                    <img src="img/jalapeno.jpg" class="postplants">
+                    <figcaption>Jalapeno pepper plant</figcaption>
+                </figure>
+                <div class="text2">
+                    <p>
+                    <h4>Create a Schedule</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ante in nibh mauris cursus mattis molestie a iaculis at. Egestas
+                    purus viverra accumsan in nisl nisi scelerisque eu. Viverra suspendisse potenti nullam ac tortor
+                    vitae purus.
+                    <br>
+                    <h4>Personalize it!</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ante in nibh mauris cursus mattis molestie a iaculis at. Egestas
+                    purus viverra accumsan in nisl nisi scelerisque eu. Viverra suspendisse potenti nullam ac tortor
+                    vitae purus.
+                    </p>
+                </div>
+                <figure class="plant2">
+                    <img src="img/buenamulata.jpg" class="postplants">
+                    <figcaption>Buena Mulata pepper plant</figcaption>
+                </figure>
+            </div>
         </div>
-    </body>
-    <footer> Footer
-    </footer>
+    </div>
+</body>
+<footer> Website by Ember Schumpert
+</footer>
+
 </html>

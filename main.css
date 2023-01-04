@@ -1,17 +1,2 @@
-header{
-    border: 2px solid green;
-    margin:5px;
-}
-.sidebar{
-    border: 2px solid green;
-    margin:5px;
-}
-.content{
-    border: 2px solid green;
-    margin:5px;
-}
-footer{
-    border: 2px solid green;
-    margin:5px;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Red+Hat+Mono:ital,wght@0,300;0,500;1,400&display=swap');
+@import url('mainstyle.css');

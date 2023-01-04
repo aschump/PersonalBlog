@@ -1,0 +1,181 @@
+
+a,
+:visited {
+    color: inherit;
+}
+
+a:hover {
+    /*horizontal shadow /vertical shadow /blur*/
+    text-shadow: 0 0 3px rgba(144, 160, 66, 0.5);
+}
+
+body {
+    font-family: 'Red Hat Mono', monospace;
+    color: #0f0f0d;
+    background-color: #fbf0ec;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "first first first first first"
+        "main main main sd sd"
+        "ft ft ft ft ft";
+    grid-gap: 20px;
+}
+
+header {
+    grid-area: first;
+    margin: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #f07548;
+    font-size: 20px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.banner {
+    margin-top: 0;
+    max-height: 100px;
+    width: fit-content;
+
+}
+
+.content {
+    grid-area: main;
+    margin: 5px;
+}
+
+.sidebar {
+    grid-area: sd;
+    border: 1px solid #ea612f;
+    padding: 20px;
+    padding-top: 30px;
+    margin: 5px;
+    height: fit-content;
+    width: 300px;
+    background-color: rgba(233, 241, 193, 0.5);
+}
+
+.sidebar h2,
+h3 {
+    color: #56a661;
+}
+
+.photo {
+    /*centers the avatar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.socials {
+    text-align: center;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.post,
+p {
+    font-size: 18px;
+    color: #0f0f0d;
+}
+
+.post h5 {
+    margin-bottom: 0px;
+    color: #56a661;
+
+}
+
+.post h4 {
+    font-size: 20px;
+    color: #56a661;
+    padding-top: 3px;
+}
+
+.post h2 {
+    color: #f07548;
+    margin-top: 0px;
+}
+
+.preview {
+    float: left;
+    width: 400px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+footer {
+    grid-area: ft;
+    position: absolute;
+    height: 2em;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(233, 241, 193, 0.5);
+
+}
+
+@media(max-width:600px) {
+    header {
+        background-color: #f4f4ca;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+    }
+
+    header,
+    h1 {
+        font-size: 55px;
+        margin-bottom: 2px;
+    }
+
+    .banner {
+        height: 50px;
+    }
+
+    .nav {
+        font-size: 45%;
+    }
+
+    .content {
+        padding-top: 33%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    .sidebar {
+        /*make sidebar disappear*/
+        display: none;
+        position: relative;
+    }
+
+    body {
+        background-image: none;
+        background-color: #fcfcd2;
+    }
+}
+
+@media(min-width:601px) {
+
+    /*only show lines on small screen*/
+    .container hr {
+        display: none;
+    }
+}

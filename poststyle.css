@@ -1,0 +1,44 @@
+@import url('main.css');
+.post {
+    display: grid;
+    grid-template-areas: "head head head"
+        "text1 text1 img1"
+        "img2 text2 text2";
+}
+
+#preview {
+    width: 100%;
+}
+
+.top {
+    grid-area: head;
+}
+
+.text1 {
+    grid-area: text1;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.plant1 {
+    grid-area: img1;
+    width: fit-content;
+    padding-top: 25%;
+}
+
+.plant2 {
+    grid-area: img2;
+    padding-top: 25%;
+}
+
+.postplants {
+    width: 200;
+    height: 250px;
+}
+
+figcaption {
+    font-size: small;
+    font-weight: bold;
+}
