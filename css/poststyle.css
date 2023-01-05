@@ -1,4 +1,5 @@
 @import url('main.css');
+
 .post {
     display: grid;
     grid-template-areas: "head head head"
