@@ -167,7 +167,6 @@ footer {
         background-color: #fcfcd2;
         width: 100%;
         margin: 0;
-        text-align: center;
         position: fixed;
         z-index: 2;
         top: 0;
@@ -181,6 +180,8 @@ footer {
 
     .banner {
         height: 50px;
+        width:75%;
+        text-align: left;
     }
 
     .content {
@@ -191,12 +192,25 @@ footer {
 
     .container {
         margin: 0;
+    /*adding to let sidebar stay--start--*/
+        grid-template-areas: "first first first first first"
+            "main main  main sd sd"
+            "main main main sd sd"
+            "main main main main main"
+            "ft ft ft ft ft";  
     }
-
+    #avatar {
+        width: 75px;
+        height: 75px;
+        border-radius:50%;
+    }
     .sidebar {
-        /*make sidebar disappear*/
-        display: none;
+        margin-top:125px;
+        max-width: 200px;
+       /* /*make sidebar disappear*/
+     /*   display: none*/
     }
+    /*adding to let sidebar stay--end--*/
 
     body {
         background-image: none;
@@ -208,6 +222,11 @@ footer {
     /*only show lines on small screen*/
     .container hr {
         display: none;
+    }
+}
+@media(max-width:500px){
+    .content{
+        margin-top:50px;
     }
 }
 @media(max-width:300px)
